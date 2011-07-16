@@ -12,3 +12,4 @@ gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
 
 
 gem 'httparty'
+gem "rake", "0.8.7"
