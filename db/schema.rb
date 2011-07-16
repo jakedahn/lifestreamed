@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(:version => 20110716111655) do
 
   create_table "instagrams", :force => true do |t|
-    t.integer  "gram_id"
+    t.string   "gram_id"
     t.string   "text"
     t.string   "link"
     t.string   "image_url"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(:version => 20110716111655) do
   end
 
   create_table "lastfms", :force => true do |t|
-    t.integer  "time_id"
+    t.string   "time_id"
     t.string   "artist"
     t.string   "album"
     t.string   "track"
@@ -64,7 +64,7 @@ ActiveRecord::Schema.define(:version => 20110716111655) do
   end
 
   create_table "twitters", :force => true do |t|
-    t.integer  "t_id"
+    t.string   "t_id"
     t.string   "text"
     t.string   "url"
     t.datetime "created_at"
