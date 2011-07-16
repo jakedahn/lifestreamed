@@ -1,7 +1,7 @@
 class Twitter < ActiveRecord::Base
   has_one :post
   after_create :create_post
-
+  validates_uniqueness_of :t_id
 
 private
   def create_post
