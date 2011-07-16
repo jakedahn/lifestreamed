@@ -1,14 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Lifestreamed</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults, "jquery.min.js" %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<%= yield %>
+    <title>LifeStreamed</title>
+    <%= stylesheet_link_tag "style" %>
 
-</body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.5.1.min.js"%3E%3C/script%3E'))</script>
+    
+    <%= javascript_include_tag "plugins", "script", "libs/modernizr-1.7.min.js" %>
+
+    <%= csrf_meta_tag %>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1><a href="/">JakeLog</a></h1>
+      </header>
+      
+      <div id="content">
+        <%= yield %>
+      </div>
+
+      <footer>
+        <ul id="services">
+          <li><a href="#">twitter</a></li>
+        </ul>
+      </footer>
+    </div>
+  </body>
 </html>

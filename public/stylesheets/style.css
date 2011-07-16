@@ -1,0 +1,59 @@
+/* @override http://looce.com:3000/stylesheets/style.css */
+
+/* @override http://looce.com:3000/stylesheets/style.css */
+/* @override http://looce.com/css/style.css */
+
+@import url("reset.css");
+
+
+body {
+	background: #fff url(../images/bg.png) top left repeat-x;
+	font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #555;
+}
+p {
+	line-height: 20px;
+	margin: 10px 0;
+}
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+h1, h2, h2, h3, h4, h5, h6 {
+	font-family: 'Helvetica Neue'; 
+	font-weight: bold;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#wrapper.grid_on {
+	background: url(../images/grid.png) top left repeat-y;
+}
+
+header {
+	float: left;
+	width: 960px;
+	margin-bottom: 46px;
+}
+
+h1 a{
+	font-size: 72px;
+	background: url(../images/logo.png) top left no-repeat;
+	text-decoration: none;
+	padding: 0;
+	float: left;
+	display: block;
+	margin: 0;
+}
+
+#content {
+	float: left;
+}
