@@ -49,13 +49,19 @@ header {
 }
 
 h1 a{
-	font-size: 72px;
+	font-size: 40px;
 	background: url(../images/logo.png) top left no-repeat;
 	text-decoration: none;
 	padding: 0;
 	float: left;
 	display: block;
-	margin: 0;
+	margin: 50px 0 0;
+	color: #888;
+}
+
+h1 a:hover {
+	color: #666;
+	text-decoration: none;
 }
 
 #content {
@@ -65,7 +71,7 @@ h1 a{
 
 .block {
 	float: left;
-	width: 340px;
+	width: 310px;
 	background: #fff;
 }
 
@@ -75,7 +81,7 @@ h1 a{
 	margin-left: 25px;
 }
 
-.tweet {
+.tweet, .song {
 	display: block;
 	float: left;
 	border: 1px dotted #cee6ff;
@@ -83,7 +89,7 @@ h1 a{
 	padding: 25px;
 }
 
-.tweet h4 {
+.tweet h4, .song h4 {
 	font-weight: normal;
 }
 
@@ -100,8 +106,8 @@ h1 a{
 
 
 #photos.block {
-	width: 250px;
-	margin-left: 62px;
+	margin-left: 50px;
+	width: 238px;
 }
 
 .photo {
@@ -117,6 +123,11 @@ h1 a{
 	padding-right: 15px;
 	font-size: 12px;
 	margin-top: 15px;
+}
+
+#songs {
+	float: left;
+	margin-left: 51px;
 }
 
 footer {
