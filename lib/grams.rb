@@ -16,7 +16,7 @@ class Grams
     text = gram.fetch('caption', "").blank? ? "" : gram['caption']['text']
     created_at = gram.fetch('caption', "").blank? ? gram['created_time'] : Time.at(gram['created_time'].to_i)
     parsed_gram = {
-      :g_id => gram['id'],
+      :gram_id => gram['id'],
       :text => text,
       :link => gram['link'],
       :image_url => gram['images']['standard_resolution']['url'],

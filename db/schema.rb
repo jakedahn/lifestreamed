@@ -10,7 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716081126) do
+ActiveRecord::Schema.define(:version => 20110716104937) do
+
+  create_table "instagrams", :force => true do |t|
+    t.integer  "gram_id"
+    t.string   "text"
+    t.string   "link"
+    t.string   "image_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "lastfms", :force => true do |t|
     t.integer  "time_id"

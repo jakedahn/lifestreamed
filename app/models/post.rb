@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   belongs_to :twitter
   belongs_to :lastfm
+  belongs_to :instagram
   
   attr_accessor :get_child
   

@@ -35,6 +35,17 @@ class LifeStream
           :album => song[:album]
         )
       end
+    when "instagram"
+      client = Grams.new
+      for gram in client.fetch_formatted
+        Instagram.create(
+          :gram_id => gram[:gram_id],
+          :text => gram[:text],
+          :link => gram[:link],
+          :image_url => gram[:image_url],
+          :created_at => gram[:created_at]
+        )
+      end
     end
   end
   
