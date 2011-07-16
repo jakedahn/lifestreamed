@@ -22,7 +22,7 @@ class Twitter
     }
     return parsed_tweet
   end
-  
+
   def fetch_formatted(username, entities = true, count = 10, since = nil)
     raw_tweets = fetch(username, entities, count, since)
     parsed_tweets = []
@@ -30,7 +30,7 @@ class Twitter
     for tweet in raw_tweets
       parsed_tweets.push(self.parse_tweet(tweet))
     end
-    
+
     return parsed_tweets
   end
 end
