@@ -1,5 +1,9 @@
 Lifestreamed::Application.routes.draw do
-  get "oauth/instagram"
+  get "setup/install"
+
+  get "setup/services"
+
+  post "oauth/instagram", :as => 'instagram_oauth'
 
   devise_for :users
 
