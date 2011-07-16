@@ -9,7 +9,7 @@ class Songs
       :query => {
         :method => method,
         :format => format,
-        :api_key => API_KEYS['lastfm']['key'],
+        :api_key => ENV['lastfm_key'].blank? ? API_KEYS['lastfm']['key'] : ENV['lastfm_key'],
         :user => user,
         :limit => limit
     })['recenttracks']['track']
