@@ -41,6 +41,7 @@ GEM
     arel (2.0.10)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    crack (0.1.8)
     devise (1.4.2)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.3)
@@ -55,6 +56,8 @@ GEM
       activesupport (~> 3.0)
       haml (~> 3.0)
       railties (~> 3.0)
+    httparty (0.7.8)
+      crack (= 0.1.8)
     i18n (0.5.0)
     jquery-rails (1.0.12)
       railties (~> 3.0)
@@ -116,6 +119,7 @@ DEPENDENCIES
   devise
   haml (>= 3.0.0)
   haml-rails
+  httparty
   jquery-rails
   rails (= 3.0.9)
   rails_admin!
