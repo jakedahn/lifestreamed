@@ -2,3 +2,7 @@
   %h2 Tweets
   - for tweet in @tweets
     = render :partial => "tweet", :locals => { :tweet => tweet.get_parent }
+  
+#photos.block
+  - for photo in @photos
+    = render :partial => "photo", :locals => { :photo => photo.get_parent }

@@ -1,0 +1,5 @@
+.photo
+  %a{:href => photo.link}
+    =image_tag(photo.image_url, :width => "250px")
+    %h4= link_twitter_user(auto_link(photo.text)).html_safe
+

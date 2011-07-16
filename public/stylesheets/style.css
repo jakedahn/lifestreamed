@@ -15,8 +15,12 @@ p {
 	line-height: 20px;
 	margin: 10px 0;
 }
+
+a{
+	text-decoration: none;
+}
 a, a:active, a:visited { color: #607890; }
-a:hover { color: #036; }
+a:hover { color: #036; text-decoration: underline; }
 
 h1, h2, h2, h3, h4, h5, h6 {
 	font-family: 'Helvetica Neue'; 
@@ -89,6 +93,31 @@ h1 a{
 }
 
 
+#photos.block {
+	background: transparent;
+	float: left;
+}
+
+
+#photos.block {
+	width: 250px;
+	margin-left: 62px;
+}
+
+.photo {
+	margin-bottom: 50px;
+}
+
+.photo a:hover {
+	text-decoration: none;
+}
+.photo h4 {
+	font-weight: normal;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 12px;
+	margin-top: 15px;
+}
 
 footer {
 	clear: both;
