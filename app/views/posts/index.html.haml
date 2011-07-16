@@ -1,2 +1,4 @@
-%h1 Posts#index
-%p Find me in app/views/posts/index.html.haml
+#tweets.block
+  %h2 Tweets
+  - for tweet in @tweets
+    = render :partial => "tweet", :locals => { :tweet => tweet.get_parent }

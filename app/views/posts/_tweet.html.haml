@@ -1,0 +1,4 @@
+.tweet
+  %h4= link_twitter_user(auto_link(tweet.text)).html_safe
+  %ul.meta
+    %li=link_to "Created #{time_ago_in_words(tweet.created_at)}", tweet.url

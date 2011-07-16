@@ -7,7 +7,7 @@
 
 
 body {
-	background: #fff url(../images/bg.png) top left repeat-x;
+	background: #f1f1f1 url(../images/bg.png) top left repeat-x;
 	font-family: "Lucida Grande", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #555;
 }
@@ -56,4 +56,45 @@ h1 a{
 
 #content {
 	float: left;
+	margin-bottom: 50px;
 }
+
+.block {
+	float: left;
+	width: 340px;
+	background: #fff;
+}
+
+.block h2 {
+	font-size: 24px;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+.tweet {
+	display: block;
+	float: left;
+	border: 1px dotted #cee6ff;
+	margin: 10px 25px;
+	padding: 25px;
+}
+
+.tweet h4 {
+	font-weight: normal;
+}
+
+.meta {
+	font-size: 10px;
+	margin-top: 10px;
+}
+
+
+
+footer {
+	clear: both;
+}
+
+
+
+
+
