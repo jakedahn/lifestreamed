@@ -10,7 +10,7 @@ class LifeStream
       self.service_loop(service)
     end
   end
-  
+
   def service_loop(service)
     case service[:name]
     when "twitter"
@@ -21,6 +21,18 @@ class LifeStream
           :text => tweet[:text],
           :url => tweet[:url],
           :created_at => tweet[:created_at]
+        )
+      end
+    when "lastfm"
+      client = Songs.new
+      for song in client.fetch_formatted(service[:username])
+        Lastfm.create(
+          :time_id => song[:time_id],
+          :url => song[:url],
+          :created_at => song[:created_at],
+          :track => song[:track],
+          :artist => song[:artist],
+          :album => song[:album]
         )
       end
     end

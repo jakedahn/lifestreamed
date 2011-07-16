@@ -1,5 +1,6 @@
 class Post < ActiveRecord::Base
   belongs_to :twitter
+  belongs_to :lastfm
   
   attr_accessor :get_child
   

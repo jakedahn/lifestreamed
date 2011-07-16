@@ -4,10 +4,10 @@ class CreatePosts < ActiveRecord::Migration
       t.string  :post_type
       t.integer :foursquare_id
       t.integer :twitter_id
-      t.integer :lastfm
-      t.integer :posterous
-      t.integer :github
-      t.integer :instagram
+      t.integer :lastfm_id
+      t.integer :posterous_id
+      t.integer :github_id
+      t.integer :instagram_id
 
       t.timestamps
     end
