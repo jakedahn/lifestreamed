@@ -1,7 +1,7 @@
 class CreateTwitters < ActiveRecord::Migration
   def self.up
     create_table :twitters do |t|
-      t.integer :t_id
+      t.string :t_id
       t.string :text
       t.string :url
 
