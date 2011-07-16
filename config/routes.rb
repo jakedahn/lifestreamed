@@ -1,4 +1,6 @@
 Lifestreamed::Application.routes.draw do
+  get "oauth/instagram"
+
   devise_for :users
 
   # The priority is based upon order of creation:
