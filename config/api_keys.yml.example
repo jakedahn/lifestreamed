@@ -1,0 +1,5 @@
+lastfm:
+  key: 858ca0860fcc3986a6dde6f432c2357d
+instagram:
+  client_id: [your instagram api client id]
+  redirect_url: http://url-to-your-app.com/oauth/instagram
