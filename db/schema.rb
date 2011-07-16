@@ -10,7 +10,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110716060258) do
+ActiveRecord::Schema.define(:version => 20110716081126) do
+
+  create_table "lastfms", :force => true do |t|
+    t.integer  "time_id"
+    t.string   "artist"
+    t.string   "album"
+    t.string   "track"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "posts", :force => true do |t|
     t.string   "post_type"
