@@ -6,3 +6,7 @@ Lifestreamed::Application.initialize!
 
 # load api keys from config file
 API_KEYS = YAML.load_file("#{RAILS_ROOT}/config/api_keys.yml")
+
+if ENV['RAILS_ENV'] == 'development'
+  ENV['RAILS_ASSET_ID'] = ''
+end
