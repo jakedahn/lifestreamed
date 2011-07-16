@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(:version => 20110716053542) do
 
   create_table "posts", :force => true do |t|
+    t.string   "post_type"
     t.integer  "foursquare_id"
     t.integer  "twitter_id"
     t.integer  "lastfm"

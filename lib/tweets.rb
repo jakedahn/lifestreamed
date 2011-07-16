@@ -1,4 +1,4 @@
-class Twitter
+class Tweets
   include HTTParty
   base_uri 'https://api.twitter.com/1'
   disable_rails_query_string_format
